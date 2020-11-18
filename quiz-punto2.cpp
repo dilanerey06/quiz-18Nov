@@ -9,8 +9,8 @@ void rectDerecha(int ite);
 void rectArriba(int ite);
 void rectAbajo(int ite);
 void rectDiag(int ite);
+
 float sum_func;
-float max_der=0, max_arr=0, max_aba=0, max_diag=0;
 float maxim=0;
 float **ptrMatrix; 
 int n=20;
@@ -23,13 +23,9 @@ int main(){
 	readBin();
 	imp();
 	rectDerecha(0);
-	//cout<<"max_der= "<<max_der<<'\n';
 	rectArriba(0);
-	//cout<<"max_arr= "<<max_arr<<'\n';
 	rectAbajo(0);
-	//cout<<"max_aba= "<<max_aba<<'\n';
 	rectDiag(0);
-	//cout<<"max_diag= "<<max_aba<<'\n';
 	cout<<"Maxima suma: "<<maxim<<'\n';
 	delete[]ptrMatrix;
 	return 0;
